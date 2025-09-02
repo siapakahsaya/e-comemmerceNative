@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --most-color: #2ECC71;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #b1b0b0
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    min-height: 100vh;
+}
+
+aside {
+    background-color: var(--most-color);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 0 4rem 4rem 0;
+}
+
+aside h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+aside a {
+    color: #ffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+aside a:hover {
+    text-decoration: underline;
+}
+
+main {
+    width: 100%;
+}
+#pencarian {
+    display:block;
+    margin: 1rem auto;
+    width:42rem;
+    height:3.125rem;
+    border: none;
+    background-color: gray;
+    border-radius: 4rem;
+      }
+/* Product card */
+#product {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Product card */
+.product-grid {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+
+}
+
+.product-grid:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.product-grid img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Opsional: biar sudut gambar melengkung */
+    margin-bottom: 10px;
+}
